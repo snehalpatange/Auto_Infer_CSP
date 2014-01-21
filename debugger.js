@@ -1,4 +1,3 @@
-
 //const xpcom = require("xpcom");
 //var {Cc,Cu,Ci} = require("chrome");
 //const xpcom = require("xpcom");
@@ -83,7 +82,6 @@ console.log("End-line NO:",endLineNo);
   // var execLines = script.getExecutableLines(Components.interfaces.jsdIScript.PCMAP_SOURCETEXT, script.baseLineNumber, (script.baseLineNumber+script.lineExtent));
   // dump("\n\n Executable lines are as follows: \n" + execLines.toSource());
 
-
   // Set a breakpoint on a script: Each excutable line
   // Map each line to a PC, and collect that set of PCs (removing duplicates)
   var pcs = {};
@@ -107,4 +105,4 @@ console.log("End-line NO:",endLineNo);
   }
  } // end of http IF loop
 
-} // end of printTopLevelScript() funciton
+} // end of printTopLevelScript() function
