@@ -68,7 +68,7 @@ function printTopLevelScript(script, start)
 		fileURI = ioService.newURI(fileURI, null, null).spec;
 	    } catch(e) {}
 
-  if (script.baseLineNumberart) {
+  if (start) {
       var endLineNo = script.baseLineNumber + script.lineExtent;
      
  console.log("\n -----------------------------------" +fileURI + " \nStart Line No:" + script.baseLineNumber + "  End Line No:" + endLineNo + "  Max Recurrsion:" + script.maxRecurseDepth + "  Call Count:" + script.callCount + "\njsdiCallHook:TYPE_TOPLEVEL_START:\n" + script.functionSource + "base line no:"+script.baseLineNumber);
